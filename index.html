@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="friendlyApp">
 <head>
   <title>Angular Friends</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="app.js"></script>
+  <script src="FriendController.js"></script>
 </head>
-<body>
+<body  ng-controller='friendlyController'>
 
   <h1>The <strong>facebook</strong> Friend Machine</h1>
-
+  <h2>{{test}}</h2>
   <div class="friends">
     <form class="form-inline searchForm" role="form">
       <div class="form-group">
@@ -36,6 +39,7 @@
 
       </div>
     </form>
+
 
     <ul>
       <li class='friend'>
