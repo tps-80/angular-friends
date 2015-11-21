@@ -12,7 +12,7 @@
 <body  ng-controller='friendlyController'>
 
   <h1>The <strong>facebook</strong> Friend Machine</h1>
-  <h2>{{test}}</h2>
+  <h2>placeholder</h2>
   <div class="friends">
     <form class="form-inline searchForm" role="form">
       <div class="form-group">
@@ -39,7 +39,9 @@
 
       </div>
     </form>
-
+    <ul>
+    <li ng-repeat="friend in friends"><img src="{{friend.pic_square}}"></li>
+    </ul>
 
     <ul>
       <li class='friend'>
